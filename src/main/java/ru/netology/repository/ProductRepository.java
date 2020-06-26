@@ -29,7 +29,9 @@ public class ProductRepository {
             }
         }
         items = tmp;
+        System.out.println("repo done");
     }
+
 
 }
 
