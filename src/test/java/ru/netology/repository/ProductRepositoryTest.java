@@ -28,13 +28,6 @@ class ProductRepositoryTest {
         assertArrayEquals(expected, actual);
     }
 
-    @Test
-    void removeByIdInvalid() {
-        repository.removeById(3);
-        Product[] actual = repository.findAll();
-        Product[] expected = new Product[]{first,second };
-        assertArrayEquals(expected, actual);
-    }
 
     @Test
     void shouldRemoveByIdNotExist(){
